@@ -1,0 +1,45 @@
+.list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 24px;
+  list-style: none;
+  padding: 0;
+}
+
+.list a {
+  text-decoration: none;
+}
+
+.list img {
+  background: #e5e7eb;
+  border-radius: 12px;
+  width: 100%;
+  height: 80%;
+  display: block;
+  text-align: center;
+}
+
+.card {
+  background-color: #ffffff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+  transition: transform 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+}
+
+.poster {
+  width: 100%;
+  height: 270px;
+  object-fit: cover;
+}
+
+.title {
+  padding: 12px;
+  font-size: 14px;
+  font-weight: 500;
+  text-align: center;
+}

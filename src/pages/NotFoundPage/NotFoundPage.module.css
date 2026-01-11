@@ -1,0 +1,22 @@
+.container {
+  min-height: 60vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.title {
+  font-size: 48px;
+  margin-bottom: 16px;
+}
+
+.text {
+  color: #6b7280;
+  margin-bottom: 24px;
+}
+
+.link {
+  color: #2563eb;
+  font-weight: 500;
+}
