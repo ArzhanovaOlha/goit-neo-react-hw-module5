@@ -4,8 +4,6 @@ import { getMovieCredits } from "../../services/tmdbApi";
 import styles from "./MovieCast.module.css";
 
 const IMAGE_BASE_URL = "https://image.tmdb.org/t/p/w200";
-const PLACEHOLDER =
-  "https://via.placeholder.com/200x300?text=No+Photo";
 
 export default function MovieCast() {
   const { movieId } = useParams();
@@ -52,7 +50,7 @@ export default function MovieCast() {
             src={
               profile_path
                 ? `${IMAGE_BASE_URL}${profile_path}`
-                : PLACEHOLDER
+                : null
             }
             alt={name}
             className={styles.image}
